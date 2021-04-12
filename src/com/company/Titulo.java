@@ -1,9 +1,13 @@
 package com.company;
 
 public class Titulo {
-    void mostrar(){
-        System.out.println("||===================================||");
-        System.out.println("||- - - - Escuderías F1 2021 - - - - ||");
-        System.out.println("||===================================||");
+    void mostrar(String titulo){
+        marco marco = new marco();
+        marco.mostrarHorizontal();
+        marco.mostrarIzquierda();
+        System.out.print(titulo);
+        marco.mostrarDerecha();
+        marco.mostrarHorizontal();
     }
 }
+

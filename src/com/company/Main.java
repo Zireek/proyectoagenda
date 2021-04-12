@@ -5,23 +5,11 @@ import jdk.management.jfr.SettingDescriptorInfo;
 import java.util.Scanner;
 
 public class Main {
-
-	public static Scanner scanner;
-
+    static Scanner scanner = new Scanner(System.in);
+    static arrayNombre arrayNombre = new arrayNombre();
 	public static void main(String[] args) {
-		Titulo titulo = new Titulo();
-		titulo.mostrar();
 
-		// Clase objeto = new Clase();
-		Pantalla pantalla = new Pantalla();
-		pantalla.mostrar();
-
-		Escuderias escuderias = new Escuderias();
-		escuderias.mostrar();
-
-		Pilotos pilotos = new Pilotos();
-		pilotos.mostrar();
-
+		entrar entrar = new entrar();
+		while(entrar.mostrar()) { }
     }
 }
-//prueba1
